@@ -48,3 +48,19 @@ def azure_openai_settings_from_dot_env(include_deployment=True) -> Tuple[str, st
     assert endpoint is not None, "Azure OpenAI endpoint not found in .env file"
 
     return deployment or "", api_key, endpoint
+
+
+def bard_settings_from_dot_env() -> str:
+    """
+    Reads the Bard API key from the .env file.
+
+    Returns:
+        str: The Bard API key
+    """
+
+    config = dotenv_values(".env")
+    api_key = config.get("BARD_API_KEY", None)
+
+    assert api_key is not None, "Bard API key not found in .env file"
+
+    return api_key

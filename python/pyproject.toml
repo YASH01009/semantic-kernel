@@ -27,6 +27,12 @@ transformers = "^4.28.1"
 sentence-transformers = "^2.2.2"
 torch = "2.0.1"
 
+[tool.poetry.group.google_bard.dependencies]
+bardapi = "0.1.8"
+
+[tool.poetry.group.sentence_transformers.dependencies]
+sentence_transformers = "2.2.2"
+
 [tool.poetry.group.chromadb.dependencies]
 chromadb = "^0.3.23"
 
