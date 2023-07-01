@@ -57,7 +57,7 @@ class BardTextCompletion(TextCompletionClientBase):
         except Exception as ex:
             raise AIException(
                 AIException.ErrorCodes.ServiceError,
-                "OpenAI service failed to complete the prompt",
+                "Bard service failed to complete the prompt",
                 ex,
             )
         return response['content']

@@ -28,7 +28,7 @@ sentence-transformers = "^2.2.2"
 torch = "2.0.1"
 
 [tool.poetry.group.google_bard.dependencies]
-bardapi = "0.1.8"
+bardapi = "0.1.22"
 
 [tool.poetry.group.sentence_transformers.dependencies]
 sentence_transformers = "2.2.2"
